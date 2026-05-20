@@ -72,8 +72,7 @@ public class PlayerController : MonoBehaviour
 		//On lit et met à jour les inputs (clavier, souris)
 		UpdateInput();
 
-		//Déplacement à partir des mouvements souris
-		UpdateLook();
+
 		//Déplacement à partir des touches directionnelles
 		UpdateMove();
 
@@ -82,6 +81,11 @@ public class PlayerController : MonoBehaviour
 
 		//Si le joueur se déplace, on joue des bruits de pas
 		UpdateFootstepSounds();
+	}
+
+	private void FixedUpdate()
+	{
+		UpdateLook();
 	}
 
 	private void UpdateInput()
@@ -107,8 +111,8 @@ public class PlayerController : MonoBehaviour
 		//Si mouvement de souris nul ou trop faible, on ignore
 		if (lookInput.sqrMagnitude < 0.01f) return;
 
-		float mouseX = lookInput.x * sensitivity * Time.deltaTime;
-		float mouseY = lookInput.y * sensitivity * Time.deltaTime;
+		float mouseX = lookInput.x * sensitivity * Time.fixedDeltaTime;
+		float mouseY = lookInput.y * sensitivity * Time.fixedDeltaTime;
 
 		//Calcul de la rotation verticale à partir de l'axe y du mouvement de la souris
 		xRotation -= mouseY;
