@@ -4,6 +4,7 @@ public class Levier : MonoBehaviour
 {
     public bool isActivated = false;
     private bool playerContact = false;
+    public bool doitEtre = false;
     public Material material1;
     public Material material2;
     private MeshRenderer meshRenderer;
