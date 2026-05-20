@@ -8236,10 +8236,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639034c4bddc2d346b4907041005f448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walk: 4
+  walk: 8
   run: 6
   cam: {fileID: 1224665066}
-  sensitivity: 10
+  sensitivity: 8
   sfx_steps:
   - {fileID: 8300000, guid: ada590e8cf56b9a45a04bc85f00e682e, type: 3}
   - {fileID: 8300000, guid: d7b8ba041c59e0f4cb75e3b882bd59de, type: 3}
