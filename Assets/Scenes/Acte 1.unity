@@ -21954,7 +21954,7 @@ GameObject:
   - component: {fileID: 594880955}
   - component: {fileID: 594880956}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Verrou
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22004,6 +22004,7 @@ MonoBehaviour:
   - {fileID: 1932554125}
   - {fileID: 1350362417}
   - {fileID: 1669793297}
+  animator: {fileID: 1126253257}
 --- !u!4 &596503768 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 21e20583e0c307c4b9cef0e2f6b893a2, type: 3}
