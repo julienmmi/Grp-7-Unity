@@ -5,7 +5,7 @@ public class VerrouPorte : MonoBehaviour
 {
     
     public List<Levier> leviers;
-    private string 
+    private string validationVerrou = "Ok";
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,12 +16,17 @@ public class VerrouPorte : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    for each (Levier levier in leviers) {
-        if (!levier.isActivated) {
-            return;
+        foreach (Levier levier in leviers) {
+        if (levier.isActivated == levier.doitEtre) {
+            validationVerrou = "Ok";
+        } else {
+            validationVerrou = "Pas Ok";
+            break;
         }
+        if (validationVerrou == "Ok") {
+            //Ouvrir la porte
+            //jouer un son
+        }
+    }
     }
 }
