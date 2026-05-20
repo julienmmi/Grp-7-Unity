@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {   
+	private const string FovPrefKey = "player_fov";
+	private const string SensitivityPrefKey = "player_sensitivity";
+	private const float DefaultFov = 70f;
+	private const float DefaultSensitivity = 5f;
+
 	//Vitesse en marchant et en courant
     [SerializeField] private float walk, run;
 	private bool isRunning = false;
@@ -11,6 +16,7 @@ public class PlayerController : MonoBehaviour
 
 	//Sensibilité de la souris
 	[SerializeField] private float sensitivity = 50;
+	private Camera playerCamera;
 
 	//Pour les bruits de pas
 	[SerializeField] private AudioClip[] sfx_steps;
@@ -38,6 +44,9 @@ public class PlayerController : MonoBehaviour
 		controls = new PlayerControls();
 		cc = GetComponent<CharacterController>();
 		audio_steps = GetComponent<AudioSource>();
+		if (cam != null){
+			playerCamera = cam.GetComponent<Camera>();
+		}
 	}
 
 	void OnEnable()
@@ -55,10 +64,35 @@ public class PlayerController : MonoBehaviour
     {
         speed = walk;
         cc.enabled = true;
+		ApplySavedSettings();
 
 		//Rend le curseur invisible
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
+	}
+
+	public void ApplySavedSettings()
+	{
+		SetSensitivity(PlayerPrefs.GetFloat(SensitivityPrefKey, DefaultSensitivity));
+		SetFieldOfView(PlayerPrefs.GetFloat(FovPrefKey, DefaultFov));
+	}
+
+	public void SetSensitivity(float value)
+	{
+		sensitivity = Mathf.Clamp(value, 1f, 10f);
+	}
+
+	public void SetFieldOfView(float value)
+	{
+		if (playerCamera == null && cam != null){
+			playerCamera = cam.GetComponent<Camera>();
+		}
+
+		if (playerCamera == null){
+			return;
+		}
+
+		playerCamera.fieldOfView = Mathf.Clamp(value, 70f, 110f);
 	}
 
     private void Update()
