@@ -5,7 +5,7 @@ public class VerrouPorte : MonoBehaviour
 {
     
     public List<Levier> leviers;
-    private string validationVerrou = "Ok";
+    private bool validationVerrou = true;
     public Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,18 +17,22 @@ public class VerrouPorte : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach (Levier levier in leviers) {
-        if (levier.isActivated == levier.doitEtre) {
-            validationVerrou = "Ok";
-        } else {
-            validationVerrou = "Pas Ok";
-            break;
+        validationVerrou = true;
+        foreach (Levier levier in leviers)
+        {
+            if (levier.isActivated != levier.doitEtre)
+            {
+                validationVerrou = false;
+                break;
+            }
         }
-        if (validationVerrou == "Ok") {
+
+        if (validationVerrou == true)
+        {
             animator.SetBool("IsOpen", true);
             AudioManager am = AudioManager.instance;
-			am.PlaySFX(am.sfx_list.sfx_end);
+            am.PlaySFX(am.sfx_list.sfx_victory);
         }
-    }
+        
     }
 }
