@@ -4,8 +4,10 @@ public class PlayerController : MonoBehaviour
 {   
 	private const string FovPrefKey = "player_fov";
 	private const string SensitivityPrefKey = "player_sensitivity";
-	private const float DefaultFov = 70f;
+	private const string VolumePrefKey = "player_volume";
+	private const float DefaultFov = 90f;
 	private const float DefaultSensitivity = 5f;
+	private const float DefaultVolume = 100f;
 
 	//Vitesse en marchant et en courant
     [SerializeField] private float walk, run;
@@ -75,11 +77,13 @@ public class PlayerController : MonoBehaviour
 	{
 		SetSensitivity(PlayerPrefs.GetFloat(SensitivityPrefKey, DefaultSensitivity));
 		SetFieldOfView(PlayerPrefs.GetFloat(FovPrefKey, DefaultFov));
+		SetVolume(PlayerPrefs.GetFloat(VolumePrefKey, DefaultVolume));
 	}
 
 	public void SetSensitivity(float value)
 	{
-		sensitivity = Mathf.Clamp(value, 1f, 10f);
+		// Map the 1-10 slider to actual sensitivity values like 10-100 
+		sensitivity = Mathf.Clamp(value * 10f, 10f, 100f);
 	}
 
 	public void SetFieldOfView(float value)
@@ -93,6 +97,16 @@ public class PlayerController : MonoBehaviour
 		}
 
 		playerCamera.fieldOfView = Mathf.Clamp(value, 70f, 110f);
+	}
+
+	public void SetVolume(float value)
+	{
+		if (audio_steps != null) {
+			audio_steps.volume = Mathf.Clamp(value / 100f, 0f, 1f);
+		}
+		if (AudioManager.instance != null) {
+			AudioListener.volume = Mathf.Clamp(value / 100f, 0f, 1f);
+		}
 	}
 
     private void Update()
