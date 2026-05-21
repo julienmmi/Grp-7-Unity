@@ -25,7 +25,7 @@ public class VerrouPorte : MonoBehaviour
             break;
         }
         if (validationVerrou == "Ok") {
-            animator.SetBool("isOpen", true);
+            animator.SetBool("IsOpen", true);
             AudioManager am = AudioManager.instance;
 			am.PlaySFX(am.sfx_list.sfx_end);
         }
