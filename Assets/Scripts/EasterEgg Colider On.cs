@@ -29,4 +29,18 @@ public class EasterEggOn : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        // On vérifie si l'objet qui touche l'empty est le joueur (le joueur doit avoir le tag "Player")
+        if (other.CompareTag("Player"))
+        {
+            if (EasterEggImage != null)
+            {
+                EasterEggImage.SetActive(false); // Fait disparaître l'image
+                //AudioManager am = AudioManager.instance;
+                //am.PlaySFX(am.sfx_list.sfx_EasterEgg);
+            }
+        }
+    }
 }
