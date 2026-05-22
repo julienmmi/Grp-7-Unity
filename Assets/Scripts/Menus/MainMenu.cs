@@ -25,6 +25,7 @@ public class MainMenu : MonoBehaviour
 	[SerializeField] private GameObject panel_para2;
 	[SerializeField] private GameObject panel_para3;
 	[SerializeField] private GameObject panel_credits;
+	[SerializeField] private GameObject panel_missions;
 
 	[Header("UI References (Optionnel)")]
 	[SerializeField] private Slider fovSlider;
@@ -49,6 +50,12 @@ public class MainMenu : MonoBehaviour
 				CloseCredits();
 			} else {
 				ToggleOptions();
+			}
+		}
+
+		if (Input.GetKeyDown(KeyCode.H)){
+			if (panel_missions != null){
+				panel_missions.SetActive(!panel_missions.activeSelf);
 			}
 		}
 	}
