@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 	private const string VolumePrefKey = "player_volume";
 	private const float DefaultFov = 90f;
 	private const float DefaultSensitivity = 5f;
-	private const float DefaultVolume = 100f;
+	private const float DefaultVolume = 50f;
 
 	//Vitesse en marchant et en courant
     [SerializeField] private float walk, run;
