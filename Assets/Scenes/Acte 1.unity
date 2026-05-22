@@ -12028,7 +12028,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.114092745, y: 2.697116, z: 8.027371}
   m_Center: {x: 5.038265, y: 1.2701571, z: -1.2617122}
@@ -72913,7 +72913,7 @@ MonoBehaviour:
     sfx_heal: {fileID: 0}
     sfx_end: {fileID: 0}
     sfx_hit: {fileID: 0}
-    sfx_victory: {fileID: 8300000, guid: f03c61b495c02974db883e1314a33ed7, type: 3}
+    sfx_victory: {fileID: 8300000, guid: 0be162717b73c0543a7c5c4f3799f228, type: 3}
     sfx_EasterEgg: {fileID: 8300000, guid: 3f52cc0d61ff53045a7d81d864702ab7, type: 3}
   music_list:
     music1: {fileID: 0}
@@ -77116,7 +77116,7 @@ PrefabInstance:
     - target: {fileID: 5295569051832463315, guid: 67deb89cb284b406e86a13fb700cfe67, type: 3}
       propertyPath: panel_missions
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1658183729}
     - target: {fileID: 7823293256964643084, guid: 67deb89cb284b406e86a13fb700cfe67, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -77210,6 +77210,9 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8865014538030534588, guid: 67deb89cb284b406e86a13fb700cfe67, type: 3}
       insertIndex: 0
+      addedObject: {fileID: 1658183730}
+    - targetCorrespondingSourceObject: {fileID: 8865014538030534588, guid: 67deb89cb284b406e86a13fb700cfe67, type: 3}
+      insertIndex: 1
       addedObject: {fileID: 922264412}
     - targetCorrespondingSourceObject: {fileID: 8650269493065671491, guid: 67deb89cb284b406e86a13fb700cfe67, type: 3}
       insertIndex: 5
@@ -136196,7 +136199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1658183730
 RectTransform:
   m_ObjectHideFlags: 0
@@ -136204,19 +136207,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658183729}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 843767476}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1105082289}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 648.29, y: 370}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1658183731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173264,8 +173267,8 @@ RectTransform:
   m_GameObject: {fileID: 2107067248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.18, y: 0.18, z: 0.18}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 922264412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -177230,5 +177233,4 @@ SceneRoots:
   - {fileID: 29470466}
   - {fileID: 902917168}
   - {fileID: 1349953386}
-  - {fileID: 1658183730}
   - {fileID: 1094878288}
