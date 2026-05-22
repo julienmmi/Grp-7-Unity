@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
 		[SerializeField] public AudioClip sfx_end;
 		[SerializeField] public AudioClip sfx_hit;
 		[SerializeField] public AudioClip sfx_victory;
+		[SerializeField] public AudioClip sfx_EasterEgg;
 	}
 
 	public MusicList music_list = new MusicList();
