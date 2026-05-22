@@ -44463,13 +44463,31 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "At first, Elora assumed she'd broken the map until she read this narration
-    and realized it was a part of the game's design all along.\n\nShe then praised
+  m_text: 'At first, Elora assumed she''d broken the map until she read this narration
+    and realized it was a part of the game''s design all along.
+
+
+    She then praised
     the game for its insightful and witty commentary into the nature of video game
-    structure and its examination of structural narrative tropes.\n\nSo now that
-    you're here, what do you think?\nIsn't this a fun and unique place to be?\n\nWhy
-    don't we take a minute just to drink it all in!\n\nIsn't this a fun and unique
-    place to be? \n\n...\n\nWhy don't we take a minute just to drink it all in!"
+    structure and its examination of structural narrative tropes.
+
+
+    So now that
+    you''re here, what do you think?
+
+
+    Isn''t this a fun and unique place to
+    be?
+
+
+    Why don''t we take a minute just to drink it all in!
+
+
+    ...
+
+
+    Okay,
+    I''m over it now. Are you sick of this gag yet?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
