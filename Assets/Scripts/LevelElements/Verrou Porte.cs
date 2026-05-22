@@ -31,7 +31,7 @@ public class VerrouPorte : MonoBehaviour
         {
             animator.SetBool("IsOpen", true);
             AudioManager am = AudioManager.instance;
-            am.PlaySFX(am.sfx_list.sfx_victory);
+            am.PlaySFX(am.sfx_list.sfx_victory, 0.5f);
         }
         
     }
