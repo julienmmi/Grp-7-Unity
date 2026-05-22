@@ -25,7 +25,7 @@ public class EasterEggOn : MonoBehaviour
             {
                 EasterEggImage.SetActive(true); // Fait apparaître l'image
                 AudioManager am = AudioManager.instance;
-                am.PlaySFX(am.sfx_list.sfx_EasterEgg);
+                am.PlaySFX(am.sfx_list.sfx_EasterEgg, 1.0f);
             }
         }
     }
