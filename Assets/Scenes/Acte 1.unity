@@ -44466,13 +44466,10 @@ MonoBehaviour:
   m_text: "At first, Elora assumed she'd broken the map until she read this narration
     and realized it was a part of the game's design all along.\n\nShe then praised
     the game for its insightful and witty commentary into the nature of video game
-    structure and its examination of structural narrative tropes.\n\nShe then praised
-    the game for its insightful and witty commentary into the nature of video game
-    structure and its examination of structural narrative tropes.\nSo now that you're
-    here, what do you think?\nSo now that you're here, what do you think? Isn't this
-    a fun and unique place to be?\n\nWhy don't we take a minute just to drink it
-    all in!\n\nIsn't this a fun and unique place to be? \n\n...\n\nWhy don't we take
-    a minute just to drink it all in!"
+    structure and its examination of structural narrative tropes.\n\nSo now that
+    you're here, what do you think?\nIsn't this a fun and unique place to be?\n\nWhy
+    don't we take a minute just to drink it all in!\n\nIsn't this a fun and unique
+    place to be? \n\n...\n\nWhy don't we take a minute just to drink it all in!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -107543,7 +107540,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 350, y: -450}
+  m_AnchoredPosition: {x: 350, y: -400}
   m_SizeDelta: {x: -1500, y: -1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1319953030
@@ -155890,7 +155887,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -350, y: -450}
+  m_AnchoredPosition: {x: -350, y: -400}
   m_SizeDelta: {x: -1500, y: -1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1897668546
