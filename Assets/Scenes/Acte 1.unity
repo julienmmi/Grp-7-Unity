@@ -44463,36 +44463,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'At first, Elora assumed she''d broken the map until she read this narration
-    and realized it was a part of the game''s design all along.
-
-
-    She then praised
+  m_text: "At first, Elora assumed she'd broken the map until she read this narration
+    and realized it was a part of the game's design all along.\n\nShe then praised
     the game for its insightful and witty commentary into the nature of video game
-    structure and its examination of structural narrative tropes.
-
-
-    She then
-    praised the game for its insightful and witty commentary into the nature of video
-    game structure and its examination of structural narrative tropes.
-
-    So now
-    that you''re here, what do you think?
-
-    So now that you''re here, what do
-    you think? Isn''t this a fun and unique place to be?
-
-
-    Why don''t we take
-    a minute just to drink it all in!
-
-
-    Isn''t this a fun and unique place to
-    be? ...
-
-
-
-    Why don''t we take a minute just to drink it all in!'
+    structure and its examination of structural narrative tropes.\n\nShe then praised
+    the game for its insightful and witty commentary into the nature of video game
+    structure and its examination of structural narrative tropes.\nSo now that you're
+    here, what do you think?\nSo now that you're here, what do you think? Isn't this
+    a fun and unique place to be?\n\nWhy don't we take a minute just to drink it
+    all in!\n\nIsn't this a fun and unique place to be? \n\n...\n\nWhy don't we take
+    a minute just to drink it all in!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -44525,8 +44505,8 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
